@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ClienteSetDAO implements IclienteDAO{
+public class ClienteSetDAO implements IclienteDAO {
 
     private Set<Cliente> set;
 

@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * @author Kaique
  */
-public class ClienteMapDAO implements IclienteDAO{
+public class ClienteMapDAO implements IclienteDAO {
 
     private Map<Long, Cliente> map;
 
@@ -19,7 +19,7 @@ public class ClienteMapDAO implements IclienteDAO{
 
     @Override
     public Boolean cadastro(Cliente cliente) {
-        if (this.map.containsKey(cliente.getCpf())){
+        if (this.map.containsKey(cliente.getCpf())) {
             return false;
         }
         this.map.put(cliente.getCpf(), cliente);
